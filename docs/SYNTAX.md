@@ -329,11 +329,12 @@ artists:
     - Piet Mondrian
     - Rembrandt van Rijn
     - Vincent van Gogh
+  italian: Leonardo da Vinci # this is valid: treated as a collection of one item
   1234: 5678  # this is ignored
   flurp: 12345  # this too
 ```
 
-The last two entries are ignore since they don't store arrays.
+The last two entries are ignored since their values are numeric scalars. However, the entry of `italian` (on the third line from the bottom) is valid. A single string is parsed as a single-item collection.
 
 ##### Weighted options in YAML
 
