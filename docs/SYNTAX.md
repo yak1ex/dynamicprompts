@@ -334,7 +334,8 @@ artists:
   flurp: 12345  # this too
 ```
 
-The last two entries are ignored since their values are numeric scalars. However, the entry of `italian` (on the third line from the bottom) is valid. A single string is parsed as a single-item collection.
+The numeric `1234` and `flurp` entries are ignored. The string value under
+`italian` is valid and becomes a one-item collection.
 
 ##### Weighted options in YAML
 
